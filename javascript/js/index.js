@@ -30,7 +30,7 @@ $(function() {
     cont.load('tabla.php', function() {
         var campo = $('#filtro');
         campo.on('keyup', function(e) {
-            var txt = $(this).val().toUpperCase();
+            var txt = $(this).val();
             //alert(txt);
             $("table tr td.busca").filter(function() {
                 return $(this).text().toUpperCase().indexOf(txt) == -1;
